@@ -1,5 +1,9 @@
 # created by virtualenv automatically
+*.db
+*.py[cod]
 .idea
 .venv
 .web
 __pycache__
+__pycache__/
+assets/external/

@@ -1,39 +1,35 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-
 import reflex as rx
-
-from rxconfig import config
-
-
-class State(rx.State):
-    """The app state."""
-
-    ...
+import portfolio_web.componentes.estilos as styles
+from portfolio_web.vistas.navbar import navbar
+from portfolio_web.vistas.header import header
+from portfolio_web.vistas.footer import footer
+from portfolio_web.vistas.quien_soy import who_am_i
+from portfolio_web.vistas.tecnologias import technologies
 
 
 def index() -> rx.Component:
-    # Welcome Page (Index)
-    return rx.container(
-        rx.color_mode.button(position="top-right"),
-        rx.vstack(
-            rx.heading("Welcome to Reflex!", size="9"),
-            rx.text(
-                "Get started by editing ",
-                rx.code(f"{config.app_name}/{config.app_name}.py"),
-                size="5",
+    # Pagina principal.
+    return rx.box(
+        navbar(),
+        rx.center(
+            rx.vstack(
+                header(),
+                who_am_i(),
+                technologies(),
+                who_am_i(),
             ),
-            rx.link(
-                rx.button("Check out our docs!"),
-                href="https://reflex.dev/docs/getting-started/introduction/",
-                is_external=True,
-            ),
-            spacing="5",
-            justify="center",
-            min_height="85vh",
         ),
-        rx.logo(),
+        footer(),
     )
 
 
-app = rx.App()
-app.add_page(index)
+app = rx.App(
+    stylesheets=styles.HOJA_ESTILO,
+    style=styles.ESTILO_BASE
+)
+
+app.add_page(
+    index,
+    title='Alejandro Garcia Salazar - PORTFOLIO',
+    description="Alejandro Garcia Salazar (Crohum)'s Portfolio website"
+)
