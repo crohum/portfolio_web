@@ -32,5 +32,7 @@ def boton_footer(icon: str, url: str) -> rx.Component:
         href=url,
         is_external=True,
         size='8',
-        color=TextColor.PRIMARIO.value
+        class_name='shake',
+        color=TextColor.PRIMARIO.value,
+        padding_right=Size.SMALL.value
     )

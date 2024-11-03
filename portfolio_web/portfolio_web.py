@@ -31,5 +31,5 @@ app = rx.App(
 app.add_page(
     index,
     title='Alejandro Garcia Salazar - PORTFOLIO',
-    description="Alejandro Garcia Salazar (Crohum)'s Portfolio website"
+    description="Alejandro Garcia Salazar (Crohum)'s Portfolio website",
 )

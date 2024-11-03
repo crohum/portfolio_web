@@ -18,7 +18,8 @@ class ForeachState(rx.State):
         'Markdown',
         'Git',
         'GitHub',
-        'Trello'
+        'Trello',
+        'Agile n Lean'
     ]
 
 
@@ -29,8 +30,8 @@ def logos(logo: str):
             rx.center(
                 rx.vstack(
                     rx.image(
-                        src=f'{logo.lower}.png',
-                        width='80px',
+                        src=f"{logo.lower}.png",
+                        width='50px',
                         height='auto'
                     ),
                     rx.text.strong(
@@ -92,5 +93,28 @@ def technologies():
                 logos
             ),
             columns=rx.breakpoints(initial='3', xs='4', sm='5', md='8', lg='9')
+        ),
+        rx.card(
+            rx.box(
+                rx.center(
+                    rx.vstack(
+                        rx.image(
+                            src="github.png",
+                            width='50px',
+                            height='auto'
+                        ),
+                        rx.text.strong(
+                            "github",
+                            color='#000000'
+                        )
+                    ),
+                    bg_color=Color.TERCIARIO.value,
+                    height="100px",
+                    width="100px",
+                    border_radius='25%'
+                )
+            ),
+            padding=Size.DEFAULT.value,
+            variant='ghost'
         )
     )
