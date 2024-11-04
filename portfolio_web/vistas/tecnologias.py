@@ -19,7 +19,7 @@ class ForeachState(rx.State):
         'Git',
         'GitHub',
         'Trello',
-        'Agile n Lean'
+        'Agile'
     ]
 
 
