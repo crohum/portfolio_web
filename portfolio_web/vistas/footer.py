@@ -16,22 +16,24 @@ def footer() -> rx.Component:
                         color=TextColor.PRIMARIO.value,
                         align_items='center'
                     ),
-                    rx.hstack(
+                    rx.grid(
                         rx.image(
                             src='python.png',
-                            width='40px',
-                            height='auto'
+                            width='auto',
+                            height='40px',
                         ),
                         rx.image(
                             src='reflex.png',
-                            width='35px',
-                            height='auto'
+                            width='auto',
+                            height='35px',
+                            padding_x=Size.TINY.value,
                         ),
                         rx.image(
                             src='visual code.png',
-                            width='40px',
-                            height='auto'
-                        )
+                            width='auto',
+                            height='40px',
+                        ),
+                        columns=rx.breakpoints(xs='1', sm='3')
                     )
                 )
             ),
@@ -39,23 +41,18 @@ def footer() -> rx.Component:
                 rx.vstack(
                     rx.text(
                         'This website was built in Python with Reflex framework,',
-                        as_='span',
-                        padding=Size.ZERO.value
-                    ),
-                    rx.text(
-                        'and coded in Visual Studio Code by yours truly.',
-                        as_='span',
+                        ' and coded in Visual Studio Code by yours truly.',
                         padding=Size.ZERO.value
                     ),
                     rx.link(
                         rx.hstack(
                             rx.text('view the code. '),
-                            rx.icon('arrow-up-right'),
-                            href=Links.ENLACE,
-                            is_external=True
-                        )
+                            rx.icon('arrow-up-right')
+                        ),
+                        href=Links.PORTFOLIO_URL,
+                        is_external=True
                     ),
-                    padding_bottom=Size.ZERO.value
+                    padding=Size.ZERO.value
                 ),
                 padding_x=Size.BIG.value
             ),
@@ -63,12 +60,12 @@ def footer() -> rx.Component:
             rx.card(
                 rx.vstack(
                     rx.heading(
-                        'Contact Me ! ',
+                        'Contact Me.! ',
                         style={'font_family' : Font.TITULOS.value},
                         font_size=Size.BIG.value,
                         color=TextColor.PRIMARIO.value
                     ),
-                    rx.hstack(
+                    rx.grid(
                         boton_footer(
                             'github',
                             Links.LINKEDIN_URL
@@ -76,7 +73,9 @@ def footer() -> rx.Component:
                         boton_footer(
                             'linkedin',
                             Links.LINKEDIN_URL
-                        )
+                        ),
+                        columns=rx.breakpoints(xs='1', sm='3'),
+                        align='center'
                     )
                 ),
                 variant='ghost'

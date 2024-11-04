@@ -34,5 +34,6 @@ def who_am_i() -> rx.Component:
         ),
         bg=Color.SECUNDARIO.value,
         padding=Size.BIG.value,
+        border_radius='25px',
         style=MAX_WIDTH
     )

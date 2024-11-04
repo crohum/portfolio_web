@@ -5,6 +5,7 @@ from portfolio_web.vistas.header import header
 from portfolio_web.vistas.footer import footer
 from portfolio_web.vistas.quien_soy import who_am_i
 from portfolio_web.vistas.tecnologias import technologies
+from portfolio_web.vistas.experiencia import experience
 
 
 def index() -> rx.Component:
@@ -16,7 +17,7 @@ def index() -> rx.Component:
                 header(),
                 who_am_i(),
                 technologies(),
-                who_am_i(),
+                experience(),
             ),
         ),
         footer(),

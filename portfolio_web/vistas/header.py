@@ -15,7 +15,7 @@ def header() -> rx.Component:
                 'ALEJANDRO Garcia Salazar',
                 padding_top=Size.SMALL.value,
                 font_size=Size.BIG.value,
-                class_name='animate__animated animate__bounceInDown animate__slower --animate-delay: 1s'
+                class_name='animate__animated animate__heartBeat animate__slower --animate-delay: 1s'
                 # Hacer que aparezca el nombre, usando Animate.css
             ),
             rx.text(
