@@ -1,5 +1,5 @@
 ## [ENG] Portfolio Website.
 This repository ...
 
-## [ESP] Repositorio de Aprendizaje.
+## [ESP] Portafolio en sitio Web.
 Este repositorio ...
