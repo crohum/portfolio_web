@@ -2,6 +2,7 @@ import reflex as rx
 from portfolio_web.componentes.estilos import Size, MAX_WIDTH, Color, TextColor, Font
 
 
+# HEADER, Nombre con foto en el lateral y links relevantes.
 def header() -> rx.Component:
     return rx.hstack(
         rx.vstack(
