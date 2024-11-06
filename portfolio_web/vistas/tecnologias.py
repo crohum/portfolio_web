@@ -19,7 +19,7 @@ class ForeachState(rx.State):
         'Git',
         'GitHub',
         'Trello',
-        'Agile'
+        'Agile-Lean'
     ]
 
 
@@ -51,7 +51,7 @@ def logos(logo: str):
     )
 
 
-# funcion que se manda al main para ejecutar
+# Funcion que se manda al main para ejecutar, Contiene los logos
 def technologies():
     return rx.vstack(
         rx.heading(
