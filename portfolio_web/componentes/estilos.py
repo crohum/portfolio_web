@@ -70,6 +70,7 @@ ESTILO_BASE = {
 }
 
 
+# Fuentes y CSS's animations
 HOJA_ESTILO = [
     # FONTS
     'https://fonts.googleapis.com/css?family=Qwitcher+Grypen&display=swap',
