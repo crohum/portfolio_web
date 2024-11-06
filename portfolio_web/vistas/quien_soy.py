@@ -2,6 +2,7 @@ import reflex as rx
 from portfolio_web.componentes.estilos import Size, MAX_WIDTH, Color, TextColor, Font
 
 
+# WHO AM I, Resumen corto de porque me hago desarrollador.
 def who_am_i() -> rx.Component:
     return rx.box(
         rx.vstack(
@@ -30,7 +31,8 @@ def who_am_i() -> rx.Component:
                 'In commodo suscipit elit, eu aliquet ante varius nec.',
                 color=TextColor.SECUNDARIO.value,
                 padding_bottom=Size.MEDIUM.value
-            )
+            ),
+            rx.button()
         ),
         bg=Color.SECUNDARIO.value,
         padding=Size.BIG.value,
