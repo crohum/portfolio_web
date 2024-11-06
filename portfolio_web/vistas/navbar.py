@@ -4,6 +4,7 @@ from portfolio_web.componentes.botones import boton_menu
 from portfolio_web.componentes.estilos import Color, Size
 
 
+# NAVBAR, para colocar en la parte superior de forma estatica.
 def navbar() -> rx.Component:
     return rx.box(
         rx.hstack(
