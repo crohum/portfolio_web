@@ -2,7 +2,7 @@ import reflex as rx
 from portfolio_web.componentes.estilos import Size, TextColor
 
 
-# Crea los botones del navbar de forma responsiva.
+# Crea los botones con nombre del navbar de forma responsiva.
 def boton_menu(icon: str, name: str, url: str, ext: bool) -> rx.Component:
     return rx.link(
                 rx.hstack(
@@ -24,6 +24,7 @@ def boton_menu(icon: str, name: str, url: str, ext: bool) -> rx.Component:
             ),
 
 
+# Crea los botones del footer
 def boton_footer(icon: str, url: str) -> rx.Component:
     return rx.link(
         rx.box(
