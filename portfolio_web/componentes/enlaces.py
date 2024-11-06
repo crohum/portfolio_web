@@ -1,10 +1,10 @@
 # REDES:
-LINKEDIN_URL = 'https://github.com/crohum'
+LINKEDIN_URL = 'https://www.linkedin.com/in/crohum/'
 GITHUB_URL = 'https://github.com/crohum'
 
 
 # ENLACE IMPORTANTE
-ENLACE = 'https://reflex.dev/docs/library/typography/text/'
+ENLACE = ''
 
 
 # ENLACE A LA PAGINA
