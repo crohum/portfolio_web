@@ -15,12 +15,12 @@ def boton_menu(icon: str, name: str, url: str, ext: bool) -> rx.Component:
                         name.upper(),
                         display=["none", "none", "none", "flex", "flex"] if ext
                         else ["none", "none", "flex", "flex", "flex"]
-                    ),
-                    href=url,
-                    is_external=ext,
-                    class_name='shake'
-                    # Hace que tiemble al poner el cursor, usando CSShake v1.7.0
-                )
+                    )
+                ),
+                href=url,
+                is_external=ext,
+                class_name='shake-hard'
+                # Hace que tiemble al poner el cursor, usando CSShake v1.7.0
             ),
 
 

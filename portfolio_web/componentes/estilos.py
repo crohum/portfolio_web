@@ -78,6 +78,7 @@ HOJA_ESTILO = [
 
     # CSS
     "https://csshake.surge.sh/csshake.min.css",
+    # por alguna razon no esta funcionando el shake, necesito revisar si hubo cambios en la fuente.
     "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 ]

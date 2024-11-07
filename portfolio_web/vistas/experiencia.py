@@ -1,7 +1,9 @@
 import reflex as rx
+import portfolio_web.componentes.enlaces as Links
 from portfolio_web.componentes.estilos import Size, MAX_WIDTH, Color, TextColor, Font
 
 
+# EXPERIENCE, un bloque con un resumen de mi experiencia laboral y un boton para el cv.
 def experience() -> rx.Component:
     return rx.box(
         rx.vstack(
@@ -21,6 +23,22 @@ def experience() -> rx.Component:
                 'In commodo suscipit elit, eu aliquet ante varius nec.',
                 color=TextColor.SECUNDARIO.value,
                 padding=Size.MEDIUM.value
+            ),
+            rx.hstack(
+                rx.button(
+                    'Download CV',
+                    on_click=rx.download(url='/downloads/alejandro_garcia_salazar_cv.pdf'),
+                    size='3'
+                ),
+                rx.button(
+                    'View on ',
+                    rx.box(
+                        class_name=f"fa fa-linkedin"
+                    ),
+                    href=Links.LINKEDIN_URL,
+                    is_external=True,
+                    size='3'
+                )
             )
         ),
         bg=Color.SECUNDARIO.value,

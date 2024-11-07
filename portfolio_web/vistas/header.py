@@ -52,7 +52,7 @@ def header() -> rx.Component:
                 rx.link(
                     rx.icon(
                         'download',
-                        #on_click=rx.download(href='')
+                        on_click=rx.download(url='/downloads/alejandro_garcia_salazar_cv.pdf')
                         # Descarga el archivo CV.pdf
                     )
                 ),

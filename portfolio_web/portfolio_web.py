@@ -6,6 +6,7 @@ from portfolio_web.vistas.footer import footer
 from portfolio_web.vistas.quien_soy import who_am_i
 from portfolio_web.vistas.tecnologias import technologies
 from portfolio_web.vistas.experiencia import experience
+from portfolio_web.vistas.habilidades import skills
 
 
 def index() -> rx.Component:
@@ -20,6 +21,9 @@ def index() -> rx.Component:
                 experience(),
             ),
         ),
+        rx.spacer(padding=styles.Size.VERY_BIG),
+        skills(),
+        rx.spacer(padding=styles.Size.VERY_BIG),
         footer(),
     )
 

@@ -32,7 +32,6 @@ def who_am_i() -> rx.Component:
                 color=TextColor.SECUNDARIO.value,
                 padding_bottom=Size.MEDIUM.value
             ),
-            rx.button()
         ),
         bg=Color.SECUNDARIO.value,
         padding=Size.BIG.value,

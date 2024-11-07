@@ -33,7 +33,7 @@ def footer() -> rx.Component:
                             width='auto',
                             height='40px',
                         ),
-                        columns=rx.breakpoints(xs='1', sm='3')
+                        columns=rx.breakpoints(xs='1', sm='2', md='3')
                     )
                 )
             ),
@@ -68,13 +68,13 @@ def footer() -> rx.Component:
                     rx.grid(
                         boton_footer(
                             'github',
-                            Links.LINKEDIN_URL
+                            Links.GITHUB_URL
                         ),
                         boton_footer(
                             'linkedin',
                             Links.LINKEDIN_URL
                         ),
-                        columns=rx.breakpoints(xs='1', sm='3'),
+                        columns=rx.breakpoints(xs='1', sm='2'),
                         align='center'
                     )
                 ),
