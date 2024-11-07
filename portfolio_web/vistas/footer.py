@@ -18,12 +18,12 @@ def footer() -> rx.Component:
                     ),
                     rx.grid(
                         rx.image(
-                            src='python.png',
+                            src='techs/python.png',
                             width='auto',
                             height='40px',
                         ),
                         rx.image(
-                            src='reflex.png',
+                            src='techs/reflex.png',
                             width='auto',
                             height='35px',
                             padding_x=Size.TINY.value,

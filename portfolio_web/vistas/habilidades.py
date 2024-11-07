@@ -6,7 +6,16 @@ from portfolio_web.componentes.estilos import Size, MAX_WIDTH, Color, TextColor,
 # Clase para agregar las imagenes de las tecnologias que conozco
 class ForeachState(rx.State):
     softskills : List[str] = [
-        ''
+        'teamwork',
+        'leadership',
+        'conflict_management',
+        'time_management',
+        'adaptability',
+        'communication',
+        'continuos_learning',
+        'creativity',
+        'problem_solving',
+        'critical_thinking'
     ]
 
 
@@ -28,6 +37,7 @@ def skills():
                 ),
                 rx.text(
                     'Aqui voy a poner un grid con el logo de la skill y donde obtuve/aplique ese skill.',
+                    # 'This cover has been designed using resources from Flaticon.com',
                     color=TextColor.PRIMARIO.value,
                     padding_y=Size.DEFAULT.value,
                 ),

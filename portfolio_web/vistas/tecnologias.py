@@ -30,7 +30,7 @@ def logos(logo: str):
             rx.center(
                 rx.vstack(
                     rx.image(
-                        src=f"{logo}.png",
+                        src=f"techs/{logo}.png",
                         width='60px',
                         height='auto'
                     ),
