@@ -3,19 +3,19 @@ from typing import List
 from portfolio_web.componentes.estilos import Size, MAX_WIDTH, Color, TextColor, Font
 
 
-# Clase para agregar las imagenes de las tecnologias que conozco
+# Class to add each softskill's images n descriptions.
 class ForeachState(rx.State):
-    softskills : List[str] = [
-        'teamwork',
-        'leadership',
-        'conflict_management',
-        'time_management',
-        'adaptability',
-        'communication',
-        'continuos_learning',
-        'creativity',
-        'problem_solving',
-        'critical_thinking'
+    softskills : dict[str, str] = [
+        'teamwork' : '',
+        'leadership' : '',
+        'conflict_management' : '',
+        'time_management' : '',
+        'adaptability' : '',
+        'communication' : '',
+        'continuos_learning' : '',
+        'creativity' : '',
+        'problem_solving' : '',
+        # 'critical_thinking'
     ]
 
 
