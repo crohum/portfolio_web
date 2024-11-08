@@ -43,6 +43,14 @@ MAX_WIDTH = dict(
 )
 
 
+MAX_WIDTH_SKILLS = dict(
+    align_items='start',
+    padding_x=Size.BIG.value,
+    width='100%',
+    max_width='1200px'
+)
+
+
 ESTILO_BASE = {
     'font_family': Font.TEXTO.value,
     'color': TextColor.PRIMARIO.value,
@@ -77,8 +85,7 @@ HOJA_ESTILO = [
     'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'
 
     # CSS
-    "https://csshake.surge.sh/csshake.min.css",
-    # por alguna razon no esta funcionando el shake, necesito revisar si hubo cambios en la fuente.
+    "https://csshake.surge.sh/csshake.min.css", # por alguna razon no esta funcionando el shake, necesito revisar si hubo cambios en la fuente.
     "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 ]
