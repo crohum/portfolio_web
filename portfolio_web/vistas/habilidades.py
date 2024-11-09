@@ -25,8 +25,8 @@ def grid_dict(skill: List):
     return rx.box(
         rx.hstack(
             rx.image(
-                src=f"techs/{skill[0]}.png",
-                width='60px',
+                src=f"/skills/{skill[0]}.png",
+                width=rx.breakpoints(xs=Size.VERY_BIG.value, md=Size.GARGANTUAL.value, lg=Size.COLOSAL.value),
                 height='auto'
             ),
             rx.text(skill[1])

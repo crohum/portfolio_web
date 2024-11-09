@@ -3,9 +3,12 @@ LINKEDIN_URL = 'https://www.linkedin.com/in/crohum/'
 GITHUB_URL = 'https://github.com/crohum'
 
 
-# ENLACE IMPORTANTE
-ENLACE = ''
+# ENLACES INTERNOS
+HOME = '/'
+PROYECTS = '/proyects'
+CONTACT = '/contact'
+ABOUT = '/about'
 
 
-# ENLACE A LA PAGINA
+# ENLACES EXTERNOS
 PORTFOLIO_URL = 'https://github.com/crohum/portfolio_web'

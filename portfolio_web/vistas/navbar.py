@@ -9,7 +9,7 @@ def navbar() -> rx.Component:
     return rx.box(
         rx.hstack(
             rx.avatar(
-                src='avatar.png',
+                src='/avatar.png',
                 fallback='GSA',
                 color_scheme='indigo',
                 radius='full',
@@ -24,25 +24,25 @@ def navbar() -> rx.Component:
             boton_menu(
                 'home',
                 'home',
-                '',
+                Links.HOME,
                 False
             ),
             boton_menu(
                 'app-window-mac',
                 'proyects',
-                '',
+                Links.PROYECTS,
                 False
             ),
             boton_menu(
                 'contact',
                 'contact',
-                '',
+                Links.CONTACT,
                 False
             ),
             boton_menu(
                 'braces',
                 'about me',
-                '',
+                Links.ABOUT,
                 False
             ),
             boton_menu(

@@ -1,4 +1,5 @@
 import reflex as rx
+import portfolio_web.componentes.enlaces as Links
 from portfolio_web.componentes.estilos import Size, MAX_WIDTH, Color, TextColor, Font
 
 
@@ -14,9 +15,10 @@ def who_am_i() -> rx.Component:
                     color=TextColor.PRIMARIO.value
                 ),
                 rx.spacer(),
-                rx.button(
-                    'Tell me more...',
-                    #on_click=''
+                rx.link(
+                    rx.button('Tell me more...'),
+                    href=Links.ABOUT,
+                    is_external=False
                 ),
                 padding_right=Size.BIG.value,
                 width='100%'

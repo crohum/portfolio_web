@@ -19,7 +19,7 @@ def boton_menu(icon: str, name: str, url: str, ext: bool) -> rx.Component:
                 ),
                 href=url,
                 is_external=ext,
-                class_name='shake-hard'
+                class_name='shake'
                 # Hace que tiemble al poner el cursor, usando CSShake v1.7.0
             ),
 

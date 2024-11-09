@@ -7,10 +7,11 @@ from portfolio_web.vistas.quien_soy import who_am_i
 from portfolio_web.vistas.tecnologias import technologies
 from portfolio_web.vistas.experiencia import experience
 from portfolio_web.vistas.habilidades import skills
+from portfolio_web.vistas.proyectos import proyect
 
 
+# MAIN PAGE
 def index() -> rx.Component:
-    # Pagina principal.
     return rx.box(
         navbar(),
         rx.center(
@@ -19,12 +20,41 @@ def index() -> rx.Component:
                 who_am_i(),
                 technologies(),
                 experience(),
+                # proyect()
             ),
         ),
         rx.spacer(padding=styles.Size.VERY_BIG),
         skills(),
         rx.spacer(padding=styles.Size.VERY_BIG),
         footer(),
+    )
+
+
+# PAGE with all proyects
+def proyects():
+    return rx.box(
+        navbar(),
+        rx.text("Proyects Page"),
+        footer()
+    )
+
+
+# Contact's information
+def contact():
+    return rx.box(
+        navbar(),
+        rx.text("Contact me Page"),
+        footer()
+    )
+
+
+# Why change to IT at my 40's
+def about():
+    return rx.box(
+        navbar(),
+        rx.text("About Page "
+                "a Dolphin's metaphor"),
+        footer()
     )
 
 
@@ -38,3 +68,6 @@ app.add_page(
     title='Alejandro Garcia Salazar - PORTFOLIO',
     description="Alejandro Garcia Salazar (Crohum)'s Portfolio website",
 )
+app.add_page(proyects, route='/proyects')
+app.add_page(contact, route="/contact")
+app.add_page(about)

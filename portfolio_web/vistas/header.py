@@ -1,4 +1,5 @@
 import reflex as rx
+import portfolio_web.componentes.enlaces as Links
 from portfolio_web.componentes.estilos import Size, MAX_WIDTH, Color, TextColor, Font
 
 
@@ -23,7 +24,8 @@ def header() -> rx.Component:
                 '# I want to be: like a ',
                 rx.link(
                     'Dolphin',
-                    ''
+                    href=Links.ABOUT,
+                    is_external=False
                 ),
                 ' who learned to code.',
                 font_size=Size.DEFAULT.value,
@@ -33,10 +35,15 @@ def header() -> rx.Component:
             ),
             rx.hstack(
                 rx.text('Email:'),
-                rx.box(
-                    rx.text(' " crohum@hotmail.com " '),
-                    border= f'solid, 3px, {Color.SECUNDARIO.value}'
+                rx.image(
+                    src='/crohum.png',
+                    width='auto',
+                    height=Size.BIG.value
                 ),
+                #rx.box( ***Lo cambio por imagen, para evitar scavengers***
+                #    rx.text(' " crohum@hotmail.com " '),
+                #    border= f'solid, 3px, {Color.SECUNDARIO.value}'
+                #),
                 rx.link(
                     rx.icon(
                         'copy',
