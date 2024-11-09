@@ -21,7 +21,7 @@ def header() -> rx.Component:
                 # Hacer que aparezca el nombre, usando Animate.css
             ),
             rx.text(
-                '# I want to be: like a ',
+                '# I want to be like a ',
                 rx.link(
                     'Dolphin',
                     href=Links.ABOUT,

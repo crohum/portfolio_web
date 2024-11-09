@@ -19,12 +19,15 @@ def index() -> rx.Component:
                 header(),
                 who_am_i(),
                 technologies(),
-                experience(),
-                # proyect()
+                experience()
             ),
         ),
         rx.spacer(padding=styles.Size.VERY_BIG),
         skills(),
+        rx.spacer(padding=styles.Size.VERY_BIG),
+        rx.center(
+            proyect()
+        ),
         rx.spacer(padding=styles.Size.VERY_BIG),
         footer(),
     )
