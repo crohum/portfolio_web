@@ -19,11 +19,26 @@ class State(rx.State):
             self.count = self.maximo
     
     proyectos : List[str] = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5'
+        ['portfolio', 'Portfolio Website',
+        'Build in PYTHON with Reflex framework, coded in Visual Studio Code.',
+        '"This Website ^_^!", Es una pagina que muestra mi informacion personal como desarrollador, mi experiencia, informacion y algunos de mis proyectos realizados. Esta pagina fue creada desde cero, usando solo la documentacion oficial de Reflex como apoyo',
+        'https://github.com/crohum/portfolio_web'],
+        ['restaurante', "Restaurant Guest's bill",
+        'Build in PYTHON with Tkinter framework, coded in PyCharm.',
+        'Short description',
+        'https://github.com/crohum/learnings_projects/tree/main/python_total/day_12'],
+        ['invasion', 'Alien Invasion', 
+        'Build in PYTHON with PyGame framework, coded in PyCharm.',
+        'Short description',
+        'https://github.com/crohum/learnings_projects/tree/main/python_total/day_10'],
+        ['parking', 'Parking Management',
+        'Build in PYTHON with Tkinter framework, coded in PyCharm.',
+        'Short description',
+        ''],
+        ['asteroids', 'Dodge Asteroids',
+        'Build in PYTHON with PyGame framework, coded in PyCharm.',
+        'Short description',
+        'https://github.com/crohum/dodge_asteroids']
     ]
 
     maximo : int = len(proyectos)-1
@@ -50,8 +65,7 @@ def proyect() -> rx.Component:
                 width='100%'
             ),
             rx.text(
-                'This is a preview, if you want see all proyects, '
-                'with description & code, click "View all" ',
+                'This is a preview, if you want see all proyects, click "View all" ',
                 color=TextColor.SECUNDARIO.value,
                 padding_bottom=Size.DEFAULT.value
             ),
@@ -60,7 +74,7 @@ def proyect() -> rx.Component:
                 rx.vstack(
                     rx.card(
                         rx.image(
-                            src=f'/techs/{State.proyectos[State.count]}.png',
+                            src=f'/techs/{State.proyectos[State.count][0]}.png',
                             width=rx.breakpoints(xs='400px', sm='500px'),
                             height='auto'
                         )
@@ -76,11 +90,16 @@ def proyect() -> rx.Component:
                         ),
                         rx.flex(
                             rx.center(
-                                rx.heading(
-                                    f"{State.proyectos[State.count]}",
-                                    font_size="2em"
+                                rx.link(
+                                    rx.heading(
+                                        f"{State.proyectos[State.count][1]}",
+                                        font_size="2em"
+                                    ),
+                                    href=State.proyectos[State.count][4],
+                                    is_external=True
                                 ),
                                 flex_shrink='0',
+                                class_name='shake',
                                 width=rx.breakpoints(xs='300px', sm='400px')
                             )
                         ),
@@ -93,6 +112,15 @@ def proyect() -> rx.Component:
                             on_click=State.increment
                         ),
                         spacing="4",
+                    ),
+                    rx.box(
+                        rx.text(
+                            f'{State.proyectos[State.count][2]}',
+                        ),
+                        rx.text(
+                            f'{State.proyectos[State.count][3]}',
+                        ),
+                        width=rx.breakpoints(xs='400px', sm='500px')
                     )
                 ),
                 width='100%'

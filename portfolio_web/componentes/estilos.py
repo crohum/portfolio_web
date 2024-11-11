@@ -85,7 +85,11 @@ HOJA_ESTILO = [
     'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'
 
     # CSS
-    "https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.css", # por alguna razon no esta funcionando el shake, necesito revisar si hubo cambios en la fuente.
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.css",
+        # Hacen temblar algunos iconos/botones.
     "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
+        # Efecto "latido" en el titulo.
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
+        # Trae los iconos de GitHub e In del footer.
 ]
