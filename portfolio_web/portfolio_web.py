@@ -28,6 +28,7 @@ def index() -> rx.Component:
         rx.center(
             proyect()
         ),
+        rx.spacer(padding=styles.Size.COLOSAL),
         rx.spacer(padding=styles.Size.VERY_BIG),
         footer(),
     )

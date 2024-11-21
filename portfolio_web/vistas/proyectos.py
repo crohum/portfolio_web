@@ -21,9 +21,9 @@ class State(rx.State):
     proyectos : List[str] = [
         ['portfolio', 'Portfolio Website',
         'Build in PYTHON with Reflex framework, coded in Visual Studio Code.',
-        '"This Website ^_^!", Es una pagina que muestra mi informacion personal como desarrollador, mi experiencia, informacion y algunos de mis proyectos realizados. Esta pagina fue creada desde cero, usando solo la documentacion oficial de Reflex como apoyo',
+        '"This Website ^_^!"', # Es una pagina que muestra mi informacion personal como desarrollador, mi experiencia, informacion y algunos de mis proyectos realizados. Esta pagina fue creada desde cero, usando solo la documentacion oficial de Reflex como apoyo',
         'https://github.com/crohum/portfolio_web'],
-        ['restaurante', "Restaurant Guest's bill",
+        ['restaurant', "Restaurant Guest's bill",
         'Build in PYTHON with Tkinter framework, coded in PyCharm.',
         'Short description',
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_12'],
@@ -34,7 +34,7 @@ class State(rx.State):
         ['parking', 'Parking Management',
         'Build in PYTHON with Tkinter framework, coded in PyCharm.',
         'Short description',
-        ''],
+        'https://github.com/crohum/parking_management'],
         ['asteroids', 'Dodge Asteroids',
         'Build in PYTHON with PyGame framework, coded in PyCharm.',
         'Short description',
@@ -65,7 +65,7 @@ def proyect() -> rx.Component:
                 width='100%'
             ),
             rx.text(
-                'This is a preview, if you want see all proyects, click "View all" ',
+                'This is a preview, if you want see all proyects with descriptions, click "View all" ',
                 color=TextColor.SECUNDARIO.value,
                 padding_bottom=Size.DEFAULT.value
             ),
@@ -74,7 +74,7 @@ def proyect() -> rx.Component:
                 rx.vstack(
                     rx.card(
                         rx.image(
-                            src=f'/techs/{State.proyectos[State.count][0]}.png',
+                            src=f'/proyects/{State.proyectos[State.count][0]}.png',
                             width=rx.breakpoints(xs='400px', sm='500px'),
                             height='auto'
                         )

@@ -84,4 +84,6 @@ def footer() -> rx.Component:
         bg=Color.DESTACADO.value,
         padding=Size.DEFAULT.value,
         width='100%',
+        position='absolute',
+        bottom='0'
     )
