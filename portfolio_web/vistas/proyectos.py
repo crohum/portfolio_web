@@ -25,19 +25,19 @@ class State(rx.State):
         'https://github.com/crohum/portfolio_web'],
         ['restaurant', "Restaurant Guest's bill",
         'Build in PYTHON with Tkinter framework, coded in PyCharm.',
-        'Short description',
+        "A guest's bill management.",
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_12'],
         ['invasion', 'Alien Invasion', 
         'Build in PYTHON with PyGame framework, coded in PyCharm.',
-        'Short description',
+        'Game to shot n destroy enemies.',
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_10'],
         ['parking', 'Parking Management',
         'Build in PYTHON with Tkinter framework, coded in PyCharm.',
-        'Short description',
+        'Parking management to each car n day.',
         'https://github.com/crohum/parking_management'],
         ['asteroids', 'Dodge Asteroids',
         'Build in PYTHON with PyGame framework, coded in PyCharm.',
-        'Short description',
+        'A game to dodge asteroids n collect stars.',
         'https://github.com/crohum/dodge_asteroids']
     ]
 

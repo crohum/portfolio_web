@@ -13,14 +13,22 @@ def experience() -> rx.Component:
                 font_size=Size.BIG.value,
                 color=TextColor.PRIMARIO.value
             ),
-            rx.text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc nibh, "
-                'tempus pretium leo feugiat, cursus luctus est. Vestibulum nec dignissim enim. '
-                'Mauris vitae nulla tortor. Sed convallis, sem vel efficitur tempus, '
-                'eros felis facilisis nulla, sit amet iaculis velit tortor eu tellus. '
-                'Vestibulum cursus enim lorem, et sollicitudin ante dapibus vitae. '
-                'Duis metus mauris, mollis sed sodales ac, faucibus sit amet ante. '
-                'In commodo suscipit elit, eu aliquet ante varius nec.',
+            rx.box(
+                rx.text(
+                    "I started to code at April 2024, ",
+                    "I'm currently looking for my first job opportunity in IT.",
+                ),
+                rx.spacer(padding=Size.SMALL.value),
+                rx.text(
+                    "I have worked with Agile-Lean schemes (during the board ",
+                    "game design workshop I collaborated in) and have implemented ",
+                    "the use of Kanban boards and gamified schemes in one of my works."
+                ),
+                rx.spacer(padding=Size.SMALL.value),
+                rx.text(
+                    "I have held positions ranging from QA, to Line Supervisor, ",
+                    "to Operations Coordinator in the food industry."
+                ),
                 color=TextColor.SECUNDARIO.value,
                 padding=Size.MEDIUM.value
             ),

@@ -23,14 +23,31 @@ def who_am_i() -> rx.Component:
                 padding_right=Size.BIG.value,
                 width='100%'
             ),
-            rx.text(
-                "Soy un Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc nibh,"
-                'tempus pretium leo feugiat, cursus luctus est. Vestibulum nec dignissim enim.'
-                'Mauris vitae nulla tortor. Sed convallis, sem vel efficitur tempus,'
-                'eros felis facilisis nulla, sit amet iaculis velit tortor eu tellus.'
-                'Vestibulum cursus enim lorem, et sollicitudin ante dapibus vitae.'
-                'Duis metus mauris, mollis sed sodales ac, faucibus sit amet ante.'
-                'In commodo suscipit elit, eu aliquet ante varius nec.',
+            rx.box(
+                rx.text(
+                    "My name is Alejandro Garcia Salazar aka. crohum, my first contact ",
+                    "with programming world, was around 15 years old, modifying the game ",
+                    "dungeon keeper's .txt, to make it more challenging, however, in my ",
+                    "youth I decided to study something else."
+                ),
+                rx.spacer(padding=Size.SMALL.value),
+                rx.text(
+                    "I am learning programming as autodidact and I'm looking for my first ",
+                    "job opportunity in the IT world. I started learning Phyton, because ",
+                    "I'm interested in maching learning and data science, but I would like ",
+                    "to learn other backend technologies."
+                ),
+                rx.spacer(padding=Size.SMALL.value),
+                rx.text(
+                    "Beyond work, I am passionate about board games and gamification, having ",
+                    "studied some courses on the subject. ",
+                    "At the moment I play TCG with my son."
+                ),
+                rx.spacer(padding=Size.SMALL.value),
+                rx.text(
+                    "I place great importance on job stability and work-life balance in ",
+                    "order to maintain creativity and well-being in my life."
+                ),
                 color=TextColor.SECUNDARIO.value,
                 padding_bottom=Size.MEDIUM.value
             ),
