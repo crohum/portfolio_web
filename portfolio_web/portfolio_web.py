@@ -8,6 +8,7 @@ from portfolio_web.vistas.tecnologias import technologies
 from portfolio_web.vistas.experiencia import experience
 from portfolio_web.vistas.habilidades import skills
 from portfolio_web.vistas.proyectos import proyect
+from portfolio_web.paginas.proyects import proyect_page
 
 
 # MAIN PAGE
@@ -38,7 +39,9 @@ def index() -> rx.Component:
 def proyects():
     return rx.box(
         navbar(),
-        rx.text("Proyects Page"),
+        rx.center(
+            proyect_page(),
+        ),
         footer()
     )
 

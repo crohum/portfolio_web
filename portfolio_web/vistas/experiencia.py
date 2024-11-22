@@ -42,11 +42,10 @@ def experience() -> rx.Component:
                     'View on ',
                     rx.box(
                         class_name=f"fa fa-linkedin"
-                    ),
-                    href=Links.LINKEDIN_URL,
-                    is_external=True,
-                    size='3'
-                )
+                    )
+                ),
+                href=Links.LINKEDIN_URL,
+                is_external=True
             )
         ),
         bg=Color.SECUNDARIO.value,
