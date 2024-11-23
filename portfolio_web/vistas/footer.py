@@ -46,8 +46,8 @@ def footer() -> rx.Component:
                     ),
                     rx.link(
                         rx.hstack(
-                            rx.text('view the code. '),
-                            rx.icon('arrow-up-right')
+                            rx.text('View the code. '),
+                            rx.icon('external-link')
                         ),
                         href=Links.PORTFOLIO_URL,
                         is_external=True
