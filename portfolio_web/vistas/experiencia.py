@@ -20,14 +20,14 @@ def experience() -> rx.Component:
                 ),
                 rx.spacer(padding=Size.SMALL.value),
                 rx.text(
-                    "I have worked with Agile-Lean schemes (during the board ",
+                    "Worked with Agile-Lean schemes (during the board ",
                     "game design workshop I collaborated in) and have implemented ",
                     "the use of Kanban boards and gamified schemes in one of my works."
                 ),
                 rx.spacer(padding=Size.SMALL.value),
                 rx.text(
-                    "I have held positions ranging from QA, to Line Supervisor, ",
-                    "to Operations Coordinator in the food industry."
+                    "Have held positions ranging from QA, to Line Supervisor, ",
+                    "to Operations Coordinator in the food industry by +17 years."
                 ),
                 color=TextColor.SECUNDARIO.value,
                 padding=Size.MEDIUM.value
@@ -42,7 +42,8 @@ def experience() -> rx.Component:
                     'View on ',
                     rx.box(
                         class_name=f"fa fa-linkedin"
-                    )
+                    ),
+                    size='3'
                 ),
                 href=Links.LINKEDIN_URL,
                 is_external=True

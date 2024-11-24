@@ -6,7 +6,7 @@ GITHUB_URL = 'https://github.com/crohum'
 # ENLACES INTERNOS
 HOME = '/'
 PROYECTS = '/proyects'
-CONTACT = '/contact'
+RESUME = '/resume'
 ABOUT = '/about'
 
 

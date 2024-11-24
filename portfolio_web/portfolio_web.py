@@ -9,6 +9,7 @@ from portfolio_web.vistas.experiencia import experience
 from portfolio_web.vistas.habilidades import skills
 from portfolio_web.vistas.proyectos import proyect
 from portfolio_web.paginas.proyects import proyect_page
+from portfolio_web.paginas.about_me import cuarentas, dolphin
 
 
 # MAIN PAGE
@@ -47,10 +48,10 @@ def proyects():
 
 
 # Contact's information
-def contact():
+def resume():
     return rx.box(
         navbar(),
-        rx.text("Contact me Page"),
+        rx.text("Curriculum Vitae - RESUME"),
         footer()
     )
 
@@ -59,8 +60,14 @@ def contact():
 def about():
     return rx.box(
         navbar(),
-        rx.text("About Page "
-                "a Dolphin's metaphor"),
+        rx.center(
+            rx.vstack(
+                rx.spacer(padding=styles.Size.BIG),
+                cuarentas(),
+                rx.spacer(padding=styles.Size.BIG),
+                dolphin()
+            )
+        ),
         footer()
     )
 
@@ -76,5 +83,5 @@ app.add_page(
     description="Alejandro Garcia Salazar (Crohum)'s Portfolio website",
 )
 app.add_page(proyects, route='/proyects')
-app.add_page(contact, route="/contact")
+app.add_page(resume, route="/resume")
 app.add_page(about)

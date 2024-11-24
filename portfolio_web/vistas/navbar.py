@@ -35,8 +35,8 @@ def navbar() -> rx.Component:
             ),
             boton_menu(
                 'contact',
-                'contact',
-                Links.CONTACT,
+                'curriculum',
+                Links.RESUME,
                 False
             ),
             boton_menu(

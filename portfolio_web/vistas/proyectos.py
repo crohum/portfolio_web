@@ -20,7 +20,7 @@ class State(rx.State):
     
     proyectos : List[str] = [
         ['portfolio', 'Portfolio Website',
-        'Build in PYTHON with Reflex framework, coded in Visual Studio Code.',
+        'Build in PYTHON with Reflex framework, coded in Visual Stdo Code.',
         '"This Website ^_^!"', # Es una pagina que muestra mi informacion personal como desarrollador, mi experiencia, informacion y algunos de mis proyectos realizados. Esta pagina fue creada desde cero, usando solo la documentacion oficial de Reflex como apoyo',
         'https://github.com/crohum/portfolio_web'],
         
@@ -36,7 +36,7 @@ class State(rx.State):
         
         ['parking', 'Parking Management',
         'Build in PYTHON with Tkinter framework, coded in PyCharm.',
-        'Parking management to each car n day.',
+        'Parking lot management to each car n day.',
         'https://github.com/crohum/parking_management'],
         
         ['asteroids', 'Dodge Asteroids',
@@ -81,7 +81,8 @@ def proyect() -> rx.Component:
                             src=f'/proyects/{State.proyectos[State.count][0]}.png',
                             width=rx.breakpoints(xs='400px', sm='500px'),
                             height='auto'
-                        )
+                        ),
+                        height=rx.breakpoints(xs='400px', sm='500px')
                     ),
                     rx.hstack(
                         rx.button(
