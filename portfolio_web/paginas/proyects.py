@@ -149,12 +149,12 @@ def proyect_page() -> rx.Component:
                 width='100%'
             ),
             rx.text(
-                "proyectos con codigo y descripcion y asi... ",
-                'texto... texto... texto... texto... texto... texto... texto... texto... texto... texto... texto... texto... texto... texto...'
+                "These are some of the programs I have coded, you can see all on my GitHub."
             ),
             bg=Color.SECUNDARIO.value,
             padding=Size.BIG.value,
             border_radius='25px',
+            width='100%',
             style=MAX_WIDTH
         ),
         rx.spacer(padding=Size.BIG.value),

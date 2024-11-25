@@ -33,20 +33,30 @@ def experience() -> rx.Component:
                 padding=Size.MEDIUM.value
             ),
             rx.hstack(
+                rx.spacer(),
+                rx.button(
+                    'See Resume',
+                    href=Links.RESUME,
+                    is_external=False,
+                    size='3'
+                ),
+                rx.box(
+                    rx.button(
+                        'View on ',
+                        rx.box(
+                            class_name=f"fa fa-linkedin"
+                        ),
+                        size='3'
+                    ),
+                    href=Links.LINKEDIN_URL,
+                    is_external=True
+                ),
                 rx.button(
                     'Download CV',
                     on_click=rx.download(url='/downloads/alejandro_garcia_salazar_cv.pdf'),
                     size='3'
                 ),
-                rx.button(
-                    'View on ',
-                    rx.box(
-                        class_name=f"fa fa-linkedin"
-                    ),
-                    size='3'
-                ),
-                href=Links.LINKEDIN_URL,
-                is_external=True
+                width='100%'
             )
         ),
         bg=Color.SECUNDARIO.value,

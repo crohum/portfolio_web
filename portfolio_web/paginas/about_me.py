@@ -13,29 +13,34 @@ def cuarentas() -> rx.Component:
                     color=TextColor.PRIMARIO.value
                 ),
                 rx.box(
+                    rx.spacer(padding=Size.SMALL.value),
                     rx.text(
-                        "I started to code at April 2024, ",
-                        "I'm currently looking for my first job opportunity in IT.",
+                        "After working and growing for 10 years in the same company ",
+                        "as an industrial engineer, I asked myself if this is what I ",
+                        "wanted to do for the rest of my working life, Then I started ",
+                        "to search and try options and I rediscovered my passion for programming."
                     ),
                     rx.spacer(padding=Size.SMALL.value),
                     rx.text(
-                        "Worked with Agile-Lean schemes (during the board ",
-                        "game design workshop I collaborated in) and have implemented ",
-                        "the use of Kanban boards and gamified schemes in one of my works."
-                    ),
-                    rx.spacer(padding=Size.SMALL.value),
-                    rx.text(
-                        "Have held positions ranging from QA, to Line Supervisor, ",
-                        "to Operations Coordinator in the food industry by +17 years."
+                        "I know that my previous experience will help me as a basement ",
+                        "in this new work stage. Because, now I want to be like a dolphin ",
+                        "who learned to program.",
                     ),
                     color=TextColor.SECUNDARIO.value,
                     padding=Size.MEDIUM.value
                 )
             ),
-            rx.image(
-                src="/otros/Turo.png",
-                width="100px",
-                height="auto"
+            rx.vstack(
+                rx.image(
+                    src="/otros/Turo.png",
+                    width="200px",
+                    height="auto"
+                ),
+                rx.text(
+                    'Professor Turo from Pokémon',
+                    color=TextColor.TERCIARIO.value,
+                    font_size=Size.MEDIUM.value
+                )
             )
         ),
         bg=Color.SECUNDARIO.value,
@@ -56,22 +61,66 @@ def dolphin() -> rx.Component:
             ),
             rx.box(
                 rx.text(
-                    "I started to code at April 2024, ",
-                    "I'm currently looking for my first job opportunity in IT.",
+                    "If you ask me: —Why after almost 20 years working in the industry, ",
+                    "and in my 40's, make a big change and switch to IT?",
                 ),
                 rx.spacer(padding=Size.SMALL.value),
                 rx.text(
-                    "Worked with Agile-Lean schemes (during the board ",
-                    "game design workshop I collaborated in) and have implemented ",
-                    "the use of Kanban boards and gamified schemes in one of my works."
+                    "My short answer would be: —I'm in the middle of my working life, ",
+                    "I have more time left to work than the time I have worked and I ",
+                    "want to do it in something I like."
                 ),
                 rx.spacer(padding=Size.SMALL.value),
                 rx.text(
-                    "Have held positions ranging from QA, to Line Supervisor, ",
-                    "to Operations Coordinator in the food industry by +17 years."
+                    "My long answer is: —Think of a dolphin (or a whale), a marine mammal animal."
                 ),
-                color=TextColor.PRIMARIO.value,
-                padding=Size.MEDIUM.value
+                rx.spacer(padding=Size.SMALL.value),
+                rx.text(
+                    "All animals in their origins, were multicellular organisms, some decided ",
+                    "stay in sea, but many others decided to leave the water and adapt to land, ",
+                    "millions of years later, they became mammals, so, the dolphin (or whale) was ",
+                    "an animal that adapted to land life, became a mammal and after that, it said: ",
+                    "—No, it's not what I want. —And then it went back to the sea."
+                ),
+                rx.spacer(padding=Size.SMALL.value),
+                rx.text(
+                    "Despite its “late start” in adapting to the ocean, the dolphin is considered ",
+                    "one of the most intelligent animals, and the whale is the largest animal in ",
+                    "the world."
+                ),
+                rx.spacer(padding=Size.SMALL.value),
+                color=TextColor.PRIMARIO.value
+            ),
+            rx.hstack(
+                rx.image(
+                    src="/otros/palafin.png",
+                    width="auto",
+                    height=rx.breakpoints(xs="50px", sm="100px")
+                ),
+                rx.text(
+                    "So, I want to be like a dolphin, I want to make it in the world of programming, ",
+                    "even though I didn't start at the same time as most of the other people."
+                ),
+                rx.image(
+                    src="/otros/wailord.png",
+                    width="auto",
+                    height=rx.breakpoints(xs="50px", sm="100px")
+                ),
+                color=TextColor.PRIMARIO.value
+            ),
+            rx.hstack(
+                rx.text(
+                    'Palafin from Pokémon',
+                    color=TextColor.SECUNDARIO.value,
+                    font_size=Size.MEDIUM.value
+                ),
+                rx.spacer(),
+                rx.text(
+                    'Wailord from Pokémon',
+                    color=TextColor.SECUNDARIO.value,
+                    font_size=Size.MEDIUM.value
+                ),
+                width='100%'
             )
         ),
         bg=Color.TERCIARIO.value,

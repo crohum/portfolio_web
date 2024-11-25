@@ -23,26 +23,26 @@ class State(rx.State):
         'Build in PYTHON with Reflex framework, coded in Visual Stdo Code.',
         '"This Website ^_^!"', # Es una pagina que muestra mi informacion personal como desarrollador, mi experiencia, informacion y algunos de mis proyectos realizados. Esta pagina fue creada desde cero, usando solo la documentacion oficial de Reflex como apoyo',
         'https://github.com/crohum/portfolio_web'],
-        
-        ['restaurant', "Restaurant Guest's bill",
-        'Build in PYTHON with Tkinter framework, coded in PyCharm.',
-        "A guest's bill management.",
-        'https://github.com/crohum/learnings_projects/tree/main/python_total/day_12'],
-        
-        ['invasion', 'Alien Invasion', 
-        'Build in PYTHON with PyGame framework, coded in PyCharm.',
-        'Game to shot n destroy enemies.',
-        'https://github.com/crohum/learnings_projects/tree/main/python_total/day_10'],
-        
+
         ['parking', 'Parking Management',
-        'Build in PYTHON with Tkinter framework, coded in PyCharm.',
+        'Build in PYTHON with Tkinter package, coded in PyCharm.',
         'Parking lot management to each car n day.',
         'https://github.com/crohum/parking_management'],
         
         ['asteroids', 'Dodge Asteroids',
         'Build in PYTHON with PyGame framework, coded in PyCharm.',
         'A game to dodge asteroids n collect stars.',
-        'https://github.com/crohum/dodge_asteroids']
+        'https://github.com/crohum/dodge_asteroids'],
+        
+        ['restaurant', "Restaurant Guest's bill",
+        'Build in PYTHON with Tkinter package, coded in PyCharm.',
+        "A guest's bill management.",
+        'https://github.com/crohum/learnings_projects/tree/main/python_total/day_12'],
+        
+        ['invasion', 'Alien Invasion', 
+        'Build in PYTHON with PyGame framework, coded in PyCharm.',
+        'Game to shot n destroy enemies.',
+        'https://github.com/crohum/learnings_projects/tree/main/python_total/day_10']
     ]
 
     maximo : int = len(proyectos)-1

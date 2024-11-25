@@ -65,9 +65,11 @@ def about():
                 rx.spacer(padding=styles.Size.BIG),
                 cuarentas(),
                 rx.spacer(padding=styles.Size.BIG),
-                dolphin()
+                dolphin(),
             )
         ),
+        rx.spacer(padding=styles.Size.COLOSAL),
+        rx.spacer(padding=styles.Size.VERY_BIG),
         footer()
     )
 
