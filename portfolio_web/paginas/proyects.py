@@ -8,52 +8,52 @@ class ForeachState(rx.State):
     proyectos : List[str] = [
         ['portfolio',
         'PORTFOLIO WEBSITE',
-        'TEXTO',
+        "It's my first Portfolio website, build with Python using Reflex framework.",
         'https://github.com/crohum/portfolio_web'],
 
         ['parking',
         'PARKING MANAGEMENT',
-        'TEXTO',
+        "A system to manage a parking lot, using the licence plate to track the time it stay at the parking lot. Also can print a stats summary of the cars parked on the day.",
         'https://github.com/crohum/parking_management'],
 
         ['asteroids',
         'DODGE ASTEROIDS',
-        'TEXTO',
+        'You have to dodge the asteroids at same time to collects all stars you can. This game was build in Python with Pygame framework.',
         'https://github.com/crohum/dodge_asteroids'],
 
         ["invasion",
         "ALIEN's INVASION",
-        'TEXTO',
+        'You have to destroy the aliens shot them before touch the basement, each alien destroyed respawn at random location on the top. This game was build in Python with Pygame framework.',
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_10'],
 
         ['restaurant',
         "RESTAURANT GUEST's BILL",
-        'TEXTO',
+        "By selecting each checkbox and put the quantity consumed, the program calculates the bill's totals and prints the receipt.",
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_12'],
 
         ['comisiones',
         'COMMISSION CALCULATOR',
-        'TEXTO',
+        'Calculates the commissions that correspond to each seller based on it sales. This program was build in Python with Tkinter package.',
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_02'],
 
         ['nombres',
         "NAME's CREATOR",
-        'TEXTO',
+        'Clicking the 3 side buttons and then on generate, the program creates a fantasy name. This program was build in Python with Tkinten package.',
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_01'],
 
         ['recetas',
         "COOKBOOK",
-        'TEXTO',
+        'A digital cookbook. This program was build in Python.',
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_06'],
 
         ['texto',
         'TEXT ANALIZER',
-        'TEXTO',
+        'Analyzes the text and returns information about its content. This program was build in Python.',
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_03'],
 
         ['turnero',
         'TURN GENERATOR',
-        'TEXTO',
+        "Generates a turn in order to wait to be attended in one of the 4 shop's areas. This program was build in Python.",
         'https://github.com/crohum/learnings_projects/tree/main/python_total/day_08']
     ]
 
