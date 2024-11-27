@@ -9,6 +9,7 @@ from portfolio_web.vistas.experiencia import experience
 from portfolio_web.vistas.habilidades import skills
 from portfolio_web.vistas.proyectos import proyect
 from portfolio_web.paginas.proyects import proyect_page
+from portfolio_web.paginas.resume import curriculum
 from portfolio_web.paginas.about_me import cuarentas, dolphin
 
 
@@ -47,11 +48,16 @@ def proyects():
     )
 
 
-# Contact's information
+# CV n Contact's information
 def resume():
     return rx.box(
         navbar(),
-        rx.text("Curriculum Vitae - RESUME"),
+        rx.center(
+            rx.vstack(
+                rx.text("Curriculum Vitae - RESUME"),
+                curriculum(),
+            )
+        ),
         footer()
     )
 
