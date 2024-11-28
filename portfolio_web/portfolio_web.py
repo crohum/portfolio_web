@@ -52,11 +52,9 @@ def proyects():
 def resume():
     return rx.box(
         navbar(),
+        rx.spacer(padding=styles.Size.BIG),
         rx.center(
-            rx.vstack(
-                rx.text("Curriculum Vitae - RESUME"),
-                curriculum(),
-            )
+            curriculum()
         ),
         footer()
     )

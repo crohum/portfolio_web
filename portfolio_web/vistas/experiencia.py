@@ -34,13 +34,15 @@ def experience() -> rx.Component:
             ),
             rx.hstack(
                 rx.spacer(),
-                rx.button(
-                    'See Resume',
+                rx.link(
+                    rx.button(
+                        'See Resume',
+                        size='3'
+                    ),
                     href=Links.RESUME,
-                    is_external=False,
-                    size='3'
+                    is_external=False
                 ),
-                rx.box(
+                rx.link(
                     rx.button(
                         'View on ',
                         rx.box(
