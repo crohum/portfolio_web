@@ -33,8 +33,8 @@ def who_am_i() -> rx.Component:
                 rx.spacer(padding=Size.SMALL.value),
                 rx.text(
                     "I am learning programming as autodidact and I'm looking for my first ",
-                    "job opportunity in the IT world. I started learning Phyton, because ",
-                    "I'm interested in maching learning and data science, but I would like ",
+                    "job opportunity in the IT world. I started learning Python, because ",
+                    "I'm interested in machine learning and data science, but I would like ",
                     "to learn other backend technologies."
                 ),
                 rx.spacer(padding=Size.SMALL.value),
