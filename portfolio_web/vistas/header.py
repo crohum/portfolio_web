@@ -70,7 +70,7 @@ def header() -> rx.Component:
         ),
         rx.image(
             src='perfil.png',
-            width=['12em','14em','16em','18em','20em'],
+            width=['8em','10em','12em','13em','14em'],
             height='auto',
         ),
         bg=Color.PRIMARIO.value,
