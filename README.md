@@ -5,4 +5,4 @@ This repository contains my first Portfolio website, build with Python using Ref
 Este repositorio contiene mi primer Portafolio como sitio web, creado en Python usando la extension Reflex.
 
 ##
- ![Proyect's Image](https://broadsword-group.co.uk/wp-content/uploads/2019/11/Image-Placeholder-400x250.png)
+ ![Proyect's Image](https://github.com/crohum/portfolio_web/blob/main/assets/proyects/portfolio.png)
