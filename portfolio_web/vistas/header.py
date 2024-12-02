@@ -69,7 +69,7 @@ def header() -> rx.Component:
             padding_left=Size.COLOSAL.value
         ),
         rx.image(
-            src='perfil.png',
+            src='/perfil.png',
             width=['8em','10em','12em','13em','14em'],
             height='auto',
         ),
