@@ -29,11 +29,11 @@ def logos(logo: str):
         rx.box(
             rx.center(
                 rx.vstack(
-                    rx.image(
-                        src=f"/techs/{logo}.png",
-                        width='60px',
-                        height='auto'
-                    ),
+                #    rx.image(
+                #        src=f"/techs/{logo}.png",
+                #        width='60px',
+                #        height='auto'
+                #    ),
                     rx.text.strong(
                         logo,
                         color='#000000'
