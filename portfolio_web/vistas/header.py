@@ -68,11 +68,11 @@ def header() -> rx.Component:
             ),
             padding_left=Size.COLOSAL.value
         ),
-        #rx.image(
-        #    src='/perfil.png',
-        #    width=['8em','10em','12em','13em','14em'],
-        #    height='auto',
-        #),
+        rx.image(
+            src='/perfil.png',
+            width=['8em','10em','12em','13em','14em'],
+            height='auto',
+        ),
         bg=Color.PRIMARIO.value,
         padding=Size.BIG.value,
         style=MAX_WIDTH
