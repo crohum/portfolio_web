@@ -18,7 +18,7 @@ def footer() -> rx.Component:
                     ),
                     rx.grid(
                         rx.image(
-                            src='/techs/python.png',
+                            src='/techs/Python.png',
                             width='auto',
                             height='40px',
                         ),
