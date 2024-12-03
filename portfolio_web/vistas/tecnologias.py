@@ -16,7 +16,7 @@ class ForeachState(rx.State):
 
     tools : List[str] = [
         'Markdown',
-        'git',
+        'Git',
         'GitHub',
         'Trello',
         'Agile-Lean'
