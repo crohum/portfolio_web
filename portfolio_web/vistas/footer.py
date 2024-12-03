@@ -50,7 +50,8 @@ def footer() -> rx.Component:
                             rx.icon('external-link')
                         ),
                         href=Links.PORTFOLIO_URL,
-                        is_external=True
+                        is_external=True,
+                        color=TextColor.SECUNDARIO.value
                     ),
                     padding=Size.ZERO.value
                 ),
